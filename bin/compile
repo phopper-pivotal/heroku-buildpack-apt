@@ -76,7 +76,8 @@ echo "====>> LD_LIBRARY_PATH=$LIBRARY_PATH"
 #find $BUILD_DIR -name constraints\*
 #find $BUILD_DIR -name swig.swg
 #find $BUILD_DIR -name python.swg
-#find /tmp/app/.apt/ -name swig
+echo "<<<<<< find on swig"
+find /tmp/app -name swig\*
 echo "---->> SWIG_LIB"
 /tmp/app/.apt/usr/bin/swig -swiglib
 
