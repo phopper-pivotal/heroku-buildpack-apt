@@ -73,10 +73,10 @@ export PKG_CONFIG_PATH="\$HOME/.apt/usr/lib/x86_64-linux-gnu/pkgconfig:\$HOME/.a
 EOF
 
 echo "====>> LD_LIBRARY_PATH=$LIBRARY_PATH"
-find $BUILD_DIR -name constraints\*
-find $BUILD_DIR -name swig.swg
-find $BUILD_DIR -name python.swg
-find /tmp/app/.apt/ -name swig
+#find $BUILD_DIR -name constraints\*
+#find $BUILD_DIR -name swig.swg
+#find $BUILD_DIR -name python.swg
+#find /tmp/app/.apt/ -name swig
 /tmp/app/.apt/usr/bin/swig -swiglib
 
 export PATH="$BUILD_DIR/.apt/usr/bin:$PATH"
