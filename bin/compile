@@ -73,10 +73,7 @@ export PKG_CONFIG_PATH="\$HOME/.apt/usr/lib/x86_64-linux-gnu/pkgconfig:\$HOME/.a
 EOF
 
 echo "====>> LD_LIBRARY_PATH=$LIBRARY_PATH"
-
-tree \$HOME/.apt/usr/lib/x86_64-linux-gnu 
-tree \$HOME/.apt/usr/lib/i386-linux-gnu
-tree \$HOME/.apt/usr/lib
+find $BUILD_DIR -name constraints\*
 
 export PATH="$BUILD_DIR/.apt/usr/bin:$PATH"
 export LD_LIBRARY_PATH="$BUILD_DIR/.apt/usr/lib/x86_64-linux-gnu:$BUILD_DIR/.apt/usr/lib/i386-linux-gnu:$BUILD_DIR/.apt/usr/lib:$LD_LIBRARY_PATH"
