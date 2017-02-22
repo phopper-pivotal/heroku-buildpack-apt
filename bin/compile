@@ -77,6 +77,7 @@ echo "====>> LD_LIBRARY_PATH=$LIBRARY_PATH"
 #find $BUILD_DIR -name swig.swg
 #find $BUILD_DIR -name python.swg
 #find /tmp/app/.apt/ -name swig
+echo "---->> SWIG_LIB"
 /tmp/app/.apt/usr/bin/swig -swiglib
 
 export PATH="$BUILD_DIR/.apt/usr/bin:$PATH"
