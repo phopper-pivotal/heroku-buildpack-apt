@@ -76,6 +76,7 @@ echo "====>> LD_LIBRARY_PATH=$LIBRARY_PATH"
 find $BUILD_DIR -name constraints\*
 find $BUILD_DIR -name swig.swg
 find $BUILD_DIR -name python.swg
+swig -swiglib
 
 export PATH="$BUILD_DIR/.apt/usr/bin:$PATH"
 export LD_LIBRARY_PATH="$BUILD_DIR/.apt/usr/lib/x86_64-linux-gnu:$BUILD_DIR/.apt/usr/lib/i386-linux-gnu:$BUILD_DIR/.apt/usr/lib:$LD_LIBRARY_PATH"
